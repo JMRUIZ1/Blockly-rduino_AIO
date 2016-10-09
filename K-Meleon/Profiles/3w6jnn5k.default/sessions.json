@@ -1,0 +1,59 @@
+{
+    "version ": 1,
+    "sessions": [
+        {
+            "name": "Last Session",
+            "windows": [
+                {
+                    "width": 1440,
+                    "height": 945,
+                    "screenX": 96,
+                    "screenY": 52,
+                    "state": 1,
+                    "tabs": [
+                        {
+                            "index": 0,
+                            "scrollX": 0,
+                            "scrollY": 0,
+                            "entries": [
+                                {
+                                    "url": "about:home",
+                                    "title": "K-Meleon Page de démarrage"
+                                }
+                            ]
+                        }
+                    ],
+                    "selected": 0
+                }
+            ],
+            "selectedWindow": 0
+        },
+        {
+            "name": "Previous Session",
+            "windows": [
+                {
+                    "width": 1440,
+                    "height": 945,
+                    "screenX": 96,
+                    "screenY": 52,
+                    "state": 1,
+                    "tabs": [
+                        {
+                            "index": 0,
+                            "scrollX": 0,
+                            "scrollY": 0,
+                            "entries": [
+                                {
+                                    "url": "about:home",
+                                    "title": "K-Meleon Page de démarrage"
+                                }
+                            ]
+                        }
+                    ],
+                    "selected": 0
+                }
+            ],
+            "selectedWindow": 0
+        }
+    ]
+}
