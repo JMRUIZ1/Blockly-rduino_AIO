@@ -8,9 +8,9 @@
  * To make a manual change to preferences, you can visit the URL about:config
  */
 
-user_pref("app.update.lastUpdateTime.addon-background-update-timer", 1475844094);
-user_pref("app.update.lastUpdateTime.blocklist-background-update-timer", 1475844214);
-user_pref("app.update.lastUpdateTime.search-engine-update-timer", 1476022334);
+user_pref("app.update.lastUpdateTime.addon-background-update-timer", 1476031178);
+user_pref("app.update.lastUpdateTime.blocklist-background-update-timer", 1476031298);
+user_pref("app.update.lastUpdateTime.search-engine-update-timer", 1476031058);
 user_pref("browser.cache.disk.smart_size.use_old_max", false);
 user_pref("browser.formfill.enable", false);
 user_pref("browser.formfill.saveHttpsForms", false);
@@ -20,7 +20,7 @@ user_pref("dom.disable_window_open_feature.status", false);
 user_pref("extensions.blocklist.pingCountVersion", -1);
 user_pref("extensions.bootstrappedAddons", "{}");
 user_pref("extensions.databaseSchema", 16);
-user_pref("extensions.enabledAddons", "%7B899DF1F8-2F43-4394-8315-37F6744E6319%7D:1.0.9.1,codebender%40codebender.cc:1.7.0.0");
+user_pref("extensions.enabledAddons", "codebender%40codebender.cc:1.7.0.0,%7B899DF1F8-2F43-4394-8315-37F6744E6319%7D:1.0.9.1");
 user_pref("extensions.getAddons.databaseSchema", 5);
 user_pref("extensions.installCache", "[{\"name\":\"app-global\",\"addons\":{\"{899DF1F8-2F43-4394-8315-37F6744E6319}\":{\"descriptor\":\"F:\\\\Logiciels\\\\Arduino_graphique\\\\Blockly-at-rduino_AIO\\\\K-Meleon\\\\browser\\\\extensions\\\\{899DF1F8-2F43-4394-8315-37F6744E6319}.xpi\",\"mtime\":1426181465185}}},{\"name\":\"app-profile\",\"addons\":{\"codebender@codebender.cc\":{\"descriptor\":\"F:\\\\Logiciels\\\\Arduino_graphique\\\\Blockly-at-rduino_AIO\\\\K-Meleon\\\\Profiles\\\\3w6jnn5k.default\\\\extensions\\\\codebender@codebender.cc\",\"mtime\":1476004924418,\"rdfTime\":1474499916357}}}]");
 user_pref("extensions.lastAppVersion", "31.8.0esr");

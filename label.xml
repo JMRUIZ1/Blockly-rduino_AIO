@@ -271,7 +271,11 @@
 			</s2aio_window>		
 			<Redmarrerlenavigateur1 type="TMenuItem">
 			  <Caption>
+<<<<<<< HEAD
 				<FR>Redémarrer le navigateur</FR>
+=======
+				<FR>Redémarrer e navigateur</FR>
+>>>>>>> 0ceb5c33fa68b7a1f1fd4cde81635f711e3e55c6
 				<EN>Relaunch browser</EN>
 				<ES>Reiniciar el navegadores </ES>
 			  </Caption>
