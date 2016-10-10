@@ -1447,7 +1447,7 @@
 		</category>
 		<category name="CAT_ZUMO_FUNCTION" colour="#00138b">
 			<block type="Zumo_line_follower"></block>
-			<block type="Zumo_BorderDetect"></block>
+			<block type="Zumo_SensorCalibration"></block>
 		</category>
 		<sep></sep>
 	</category>
