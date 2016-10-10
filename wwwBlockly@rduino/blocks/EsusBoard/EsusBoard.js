@@ -1,7 +1,9 @@
 
 'use strict';
 
+goog.provide('Blockly.Blocks.EsusBoard');
 
+goog.require('Blockly.Blocks');
 
 /**
  * Common HSV hue for all blocks in this category.
@@ -9,7 +11,7 @@
 
  Blockly.Blocks['EsusBoard_init'] = {
   init: function() {
-    this.setColour("#00559D");
+    this.setColour("#2475FA");
 	this.setHelpUrl('http://www.macerobotics.com');
 	this.setInputsInline(true);
     this.appendDummyInput("")
@@ -21,7 +23,7 @@
 
  Blockly.Blocks['EsusBoard_motor1'] = {
   init: function() {
-    this.setColour("#00559D");
+    this.setColour("#2475FA");
 	this.setHelpUrl('http://www.macerobotics.com');
 	this.appendValueInput("PIN", 'Number')
         .setAlign(Blockly.ALIGN_RIGHT)
@@ -40,7 +42,7 @@
 
  Blockly.Blocks['EsusBoard_motor2'] = {
   init: function() {
-    this.setColour("#00559D");
+    this.setColour("#2475FA");
 	this.setHelpUrl('http://www.macerobotics.com');
 	this.appendValueInput("PIN", 'Number')
         .setAlign(Blockly.ALIGN_RIGHT)
@@ -59,7 +61,7 @@
 
 Blockly.Blocks['EsusBoard_analog'] = {
   init: function() {
-    this.setColour("#00559D");
+    this.setColour("#2475FA");
 	this.setHelpUrl('http://www.macerobotics.com');
 	this.appendValueInput("PIN")
 		.setCheck('Number')
@@ -72,7 +74,7 @@ Blockly.Blocks['EsusBoard_analog'] = {
 
  Blockly.Blocks['EsusBoard_WifiConfig'] = {
   init: function() {
-    this.setColour("#00559D");
+    this.setColour("#2475FA");
 	this.setHelpUrl('http://www.macerobotics.com');
     this.appendValueInput("Text_ssid")
 		.setCheck('String')
@@ -91,7 +93,7 @@ Blockly.Blocks['EsusBoard_analog'] = {
 
  Blockly.Blocks['EsusBoard_WifiConfigIP'] = {
   init: function() {
-    this.setColour("#00559D");
+    this.setColour("#2475FA");
 	this.setHelpUrl('http://www.macerobotics.com');
     this.appendValueInput("Text_ip1")
 		.setCheck('Number')
@@ -115,7 +117,7 @@ Blockly.Blocks['EsusBoard_analog'] = {
 
 Blockly.Blocks['EsusBoard_ReadStream'] = {
   init: function() {
-    this.setColour("#00559D");
+    this.setColour("#2475FA");
 	this.setHelpUrl('http://www.macerobotics.com');
 	this.appendDummyInput("")
 	    .appendField(Blockly.Msg.WIFI_READ_STREAM);
@@ -126,7 +128,7 @@ Blockly.Blocks['EsusBoard_ReadStream'] = {
 
 Blockly.Blocks['EsusBoard_dataWifiAvailable'] = {
   init: function() {
-    this.setColour("#00559D");
+    this.setColour("#2475FA");
 	this.setHelpUrl('http://www.macerobotics.com');
 	this.appendDummyInput("")
 	    .appendField(Blockly.Msg.WIFI_DATA_AVAILABLE);
@@ -137,28 +139,52 @@ Blockly.Blocks['EsusBoard_dataWifiAvailable'] = {
 
 Blockly.Blocks['EsusBoard_WifiContain'] = {
   init: function() {
-    this.setHelpUrl(Blockly.Msg.TEXT_APPEND_HELPURL);
-    this.setColour("#00559D");
+	this.setHelpUrl('http://www.macerobotics.com');
+    this.setColour("#2475FA");
     this.appendDummyInput("")
         .appendField(Blockly.Msg.WIFI_CONTAIN);
     this.appendDummyInput("")
-        .appendField(new Blockly.FieldVariable(
-        Blockly.Msg.TEXT_APPEND_VARIABLE), 'VAR')
+        .appendField(new Blockly.FieldVariable(Blockly.Msg.TEXT_APPEND_VARIABLE), 'VAR')
         .appendField(Blockly.Msg.WIFI_CONTAIN2);
     this.setPreviousStatement(false);
     this.setNextStatement(false);
     // Assign 'this' to a variable for use in the tooltip closure below.
     var thisBlock = this;
     this.setTooltip(function() {
-      return Blockly.Msg.TEXT_APPEND_TOOLTIP.replace('%1',
-          thisBlock.getFieldValue('VAR'));
+      return Blockly.Msg.TEXT_APPEND_TOOLTIP.replace('%1',thisBlock.getFieldValue('VAR'));
     });
     this.setOutput(true, 'String');
   }
-}
+};
 
-
-
-
-
-
+ Blockly.Blocks['EsusBoard_WifiConfigAP'] = {
+  init: function() {
+    this.setColour("#2475FA");
+	this.setHelpUrl('http://www.macerobotics.com');
+    this.appendValueInput("Text_ssid")
+		.setCheck('String')
+	    .setAlign(Blockly.ALIGN_RIGHT)
+        .appendField(Blockly.Msg.WIFI_AP);
+    this.appendValueInput("Text_password")
+		.setCheck('String')
+	    .setAlign(Blockly.ALIGN_RIGHT)
+        .appendField(Blockly.Msg.WIFI_PASSWORD);
+    this.appendValueInput("Text_ip1AP")
+		.setCheck('Number')
+	    .setAlign(Blockly.ALIGN_RIGHT)
+        .appendField(Blockly.Msg.WIFI_AP_IP);
+    this.appendValueInput("Text_ip2AP")
+		.setCheck('Number')
+	    .setAlign(Blockly.ALIGN_RIGHT)
+	this.appendValueInput("Text_ip3AP")
+		.setCheck('Number')
+	    .setAlign(Blockly.ALIGN_RIGHT)
+	this.appendValueInput("Text_ip4AP")
+		.setCheck('Number')
+	    .setAlign(Blockly.ALIGN_RIGHT)
+    this.setInputsInline(false);
+    this.setPreviousStatement(true, null);
+    this.setNextStatement(true, null);
+    this.setTooltip(Blockly.Msg.ESUS_WIFI_CONFIG);
+  }
+};
