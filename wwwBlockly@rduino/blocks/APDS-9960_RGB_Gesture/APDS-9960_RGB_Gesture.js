@@ -18,262 +18,77 @@
  * limitations under the License.
  */
 
-/**
- * @fileoverview Helper functions for generating motor blocks - sumo robots
- * Written to facilitate programming of sumo and mini-sumo robots
- * Thanks to Fred Lin for building BlockyDuino!
- * @author erickennedy@outlook.com  Eric Kennedy
- */
-
-goog.provide('Blockly.Blocks.motors');
+goog.provide('Blockly.Blocks.APDS9960');
 
 goog.require('Blockly.Blocks');
 
+/** Common HSV hue for all blocks in this category. */
+Blockly.Blocks.APDS9960.HUE = "#D9242D";
 
-Blockly.Blocks['zumo_motors_FN'] = {
+
+Blockly.Blocks['APDS9960_ColorSensor_init'] = {
   init: function() {
 	this.setHelpUrl(Blockly.Msg.ROBOTS_MISC_ZUMO_HELPURL);
-    this.setColour("#00138b");
+    this.setColour(Blockly.Blocks.APDS9960.HUE);
     this.appendDummyInput("")
-        .appendField(Blockly.Msg.ROBOTS_MOTORS_ZUMO_FN_TITLE)
-        .appendField(new Blockly.FieldImage(Blockly.pathToBlockly + 'blocks/robots/0J4110.250.jpg', Blockly.Arduino.imageSize, Blockly.Arduino.imageSize))
-        .appendField(
-				new Blockly.FieldDropdown([
-						[ Blockly.Msg.ROBOTS_MOTORS_STOP, "stop" ],
-						[ Blockly.Msg.ROBOTS_MOTORS_FORWARD, "forward" ],
-						[ Blockly.Msg.ROBOTS_MOTORS_RIGHT, "right" ],
-						[ Blockly.Msg.ROBOTS_MOTORS_LEFT, "left" ],
-						[ Blockly.Msg.ROBOTS_MOTORS_BACKWARD, "backward" ] ]),
-				"DIRECTION");
+        .appendField(Blockly.Msg.ROBOTS_MOTORS_ZUMO_FN_TITLE);
     this.setPreviousStatement(true, null);
     this.setNextStatement(true, null);
     this.setTooltip(Blockly.Msg.ROBOTS_MOTORS_ZUMO_FN_TOOLTIP);
   }
 };
 
-Blockly.Blocks['zumo_motors_FNs'] = {
-   init: function() {
-    this.setHelpUrl(Blockly.Msg.ROBOTS_MISC_ZUMO_HELPURL);
-    this.setColour("#00138b");
-	this.setInputsInline(false) ; 
-    this.appendDummyInput()
-        .appendField(Blockly.Msg.ROBOTS_MOTORS_ZUMO_FNS_TITLE)
-        .appendField(new Blockly.FieldImage(Blockly.pathToBlockly + 'blocks/robots/0J4110.250.jpg', Blockly.Arduino.imageSize, Blockly.Arduino.imageSize));
-	this.appendDummyInput()
-        .appendField(
-				new Blockly.FieldDropdown([
-						[ Blockly.Msg.ROBOTS_MOTORS_STOP, "stop" ],
-						[ Blockly.Msg.ROBOTS_MOTORS_FORWARD, "forward" ],
-						[ Blockly.Msg.ROBOTS_MOTORS_RIGHT, "right" ],
-						[ Blockly.Msg.ROBOTS_MOTORS_LEFT, "left" ],
-						[ Blockly.Msg.ROBOTS_MOTORS_BACKWARD, "backward" ] ]),
-				"DIRECTION");
-   this.setInputsInline(true) ;
-   this.appendValueInput("SPEEDA")
-       .setCheck('Number')
-        .setAlign(Blockly.ALIGN_RIGHT)
-        .appendField(Blockly.Msg.ROBOTS_MOTORS_SPEEDL);
-	this.appendValueInput("SPEEDB")
-        .setCheck('Number')
-        .setAlign(Blockly.ALIGN_RIGHT)
-        .appendField(Blockly.Msg.ROBOTS_MOTORS_SPEEDR);
-    this.setPreviousStatement(true, null);
-    this.setNextStatement(true, null);
-    this.setTooltip(Blockly.Msg.ROBOTS_MOTORS_ZUMO_FNS_TOOLTIP);
-  }
-};
-
-Blockly.Blocks['zumo_motors_FR'] = {
- init: function() {
-    this.setHelpUrl(Blockly.Msg.ROBOTS_MISC_ZUMO_HELPURL);
-    this.setColour("#00138b");
-    this.appendDummyInput()
-        .appendField(Blockly.Msg.ROBOTS_MOTORS_ZUMO_FR_TITLE)
-        .appendField(new Blockly.FieldImage(Blockly.pathToBlockly + 'blocks/robots/0J4110.250.jpg', Blockly.Arduino.imageSize, Blockly.Arduino.imageSize))
-        .appendField(
-				new Blockly.FieldDropdown([
-						[ Blockly.Msg.ROBOTS_MOTORS_STOP, "stop" ],
-						[ Blockly.Msg.ROBOTS_MOTORS_FORWARD, "forward" ],
-						[ Blockly.Msg.ROBOTS_MOTORS_RIGHT, "right" ],
-						[ Blockly.Msg.ROBOTS_MOTORS_LEFT, "left" ],
-						[ Blockly.Msg.ROBOTS_MOTORS_BACKWARD, "backward" ] ]),
-				"DIRECTION");
-    this.setPreviousStatement(true, null);
-    this.setNextStatement(true, null);
-    this.setTooltip(Blockly.Msg.ROBOTS_MOTORS_ZUMO_FR_TOOLTIP);
-  }
-};
-
-Blockly.Blocks['zumo_motors_FRs'] = {
-  init: function() {
-    this.setHelpUrl(Blockly.Msg.ROBOTS_MISC_ZUMO_HELPURL);
-    this.setColour("#00138b");
-	this.setInputsInline(false) ; 
-    this.appendDummyInput()
-        .appendField(Blockly.Msg.ROBOTS_MOTORS_ZUMO_FRS_TITLE)
-        .appendField(new Blockly.FieldImage(Blockly.pathToBlockly + 'blocks/robots/0J4110.250.jpg', Blockly.Arduino.imageSize, Blockly.Arduino.imageSize));
-    this.appendDummyInput()    
-		.appendField(
-				new Blockly.FieldDropdown([
-						[ Blockly.Msg.ROBOTS_MOTORS_STOP, "stop" ],
-						[ Blockly.Msg.ROBOTS_MOTORS_FORWARD, "forward" ],
-						[ Blockly.Msg.ROBOTS_MOTORS_RIGHT, "right" ],
-						[ Blockly.Msg.ROBOTS_MOTORS_LEFT, "left" ],
-						[ Blockly.Msg.ROBOTS_MOTORS_BACKWARD, "backward" ] ]),
-				"DIRECTION");
-	this.setInputsInline(true) ;   
-  this.appendValueInput("SPEEDA")
-       .setCheck('Number')
-        .setAlign(Blockly.ALIGN_RIGHT)
-        .appendField(Blockly.Msg.ROBOTS_MOTORS_SPEEDL);
-	this.appendValueInput("SPEEDB")
-        .setCheck('Number')
-        .setAlign(Blockly.ALIGN_RIGHT)
-        .appendField(Blockly.Msg.ROBOTS_MOTORS_SPEEDR);
-    this.setPreviousStatement(true, null);
-    this.setNextStatement(true, null);
-    this.setTooltip(Blockly.Msg.ROBOTS_MOTORS_ZUMO_FRS_TOOLTIP);
-  }
-};
-
-Blockly.Blocks['zumo_motors_FL'] = {
+Blockly.Blocks['APDS9960_ColorSensor_test'] = {
   init: function() {
 	this.setHelpUrl(Blockly.Msg.ROBOTS_MISC_ZUMO_HELPURL);
-    this.setColour("#00138b");
-    this.appendDummyInput()
-        .appendField(Blockly.Msg.ROBOTS_MOTORS_ZUMO_FL_TITLE)
-        .appendField(new Blockly.FieldImage(Blockly.pathToBlockly + 'blocks/robots/0J4110.250.jpg', Blockly.Arduino.imageSize, Blockly.Arduino.imageSize))
-        .appendField(
-				new Blockly.FieldDropdown([
-						[ Blockly.Msg.ROBOTS_MOTORS_STOP, "stop" ],
-						[ Blockly.Msg.ROBOTS_MOTORS_FORWARD, "forward" ],
-						[ Blockly.Msg.ROBOTS_MOTORS_RIGHT, "right" ],
-						[ Blockly.Msg.ROBOTS_MOTORS_LEFT, "left" ],
-						[ Blockly.Msg.ROBOTS_MOTORS_BACKWARD, "backward" ] ]),
-				"DIRECTION");
-    this.setPreviousStatement(true, null);
-    this.setNextStatement(true, null);
-    this.setTooltip(Blockly.Msg.ROBOTS_MOTORS_ZUMO_FL_TOOLTIP);
+    this.setColour(Blockly.Blocks.APDS9960.HUE);
+    this.appendDummyInput("")
+        .appendField(Blockly.Msg.ROBOTS_MOTORS_ZUMO_FN_TITLE);
+    this.setOutput(true, 'Boolean');
+    this.setTooltip(Blockly.Msg.ROBOTS_MOTORS_ZUMO_FN_TOOLTIP);
   }
 };
 
-Blockly.Blocks['zumo_motors_FLs'] = {
-init: function() {
-    this.setHelpUrl(Blockly.Msg.ROBOTS_MISC_ZUMO_HELPURL);
-    this.setColour("#00138b");
-	this.setInputsInline(false) ; 
-    this.appendDummyInput()
-        .appendField(Blockly.Msg.ROBOTS_MOTORS_ZUMO_FLS_TITLE)
-        .appendField(new Blockly.FieldImage(Blockly.pathToBlockly + 'blocks/robots/0J4110.250.jpg', Blockly.Arduino.imageSize, Blockly.Arduino.imageSize));
-     this.appendDummyInput()    
-		.appendField(
-				new Blockly.FieldDropdown([
-						[ Blockly.Msg.ROBOTS_MOTORS_STOP, "stop" ],
-						[ Blockly.Msg.ROBOTS_MOTORS_FORWARD, "forward" ],
-						[ Blockly.Msg.ROBOTS_MOTORS_RIGHT, "right" ],
-						[ Blockly.Msg.ROBOTS_MOTORS_LEFT, "left" ],
-						[ Blockly.Msg.ROBOTS_MOTORS_BACKWARD, "backward" ] ]),
-				"DIRECTION");
-   this.setInputsInline(true) ; 
-   this.appendValueInput("SPEEDA")
-       .setCheck('Number')
-        .setAlign(Blockly.ALIGN_RIGHT)
-        .appendField(Blockly.Msg.ROBOTS_MOTORS_SPEEDL);
-	this.appendValueInput("SPEEDB")
-        .setCheck('Number')
-        .setAlign(Blockly.ALIGN_RIGHT)
-        .appendField(Blockly.Msg.ROBOTS_MOTORS_SPEEDR);
-    this.setPreviousStatement(true, null);
-    this.setNextStatement(true, null);
-    this.setTooltip(Blockly.Msg.ROBOTS_MOTORS_ZUMO_FLS_TOOLTIP);
-  }
-};
-
-Blockly.Blocks['zumo_motors_FBs'] = {
+Blockly.Blocks['APDS9960_ColorSensor_ambient'] = {
   init: function() {
 	this.setHelpUrl(Blockly.Msg.ROBOTS_MISC_ZUMO_HELPURL);
-    this.setColour("#00138b");
-    this.appendDummyInput()
-        .appendField(Blockly.Msg.ROBOTS_MOTORS_ZUMO_FBS_TITLE)
-        .appendField(new Blockly.FieldImage(Blockly.pathToBlockly + 'blocks/robots/0J4110.250.jpg', Blockly.Arduino.imageSize, Blockly.Arduino.imageSize));
-     this.appendDummyInput()    
-		.appendField(
-				new Blockly.FieldDropdown([
-						[ Blockly.Msg.ROBOTS_MOTORS_STOP, "stop" ],
-						[ Blockly.Msg.ROBOTS_MOTORS_FORWARD, "forward" ],
-						[ Blockly.Msg.ROBOTS_MOTORS_RIGHT, "right" ],
-						[ Blockly.Msg.ROBOTS_MOTORS_LEFT, "left" ],
-						[ Blockly.Msg.ROBOTS_MOTORS_BACKWARD, "backward" ] ]),
-				"DIRECTION");
-   this.setInputsInline(true) ; 
-   this.appendValueInput("SPEEDA")
-       .setCheck('Number')
-        .setAlign(Blockly.ALIGN_RIGHT)
-        .appendField(Blockly.Msg.ROBOTS_MOTORS_SPEEDL);
-	this.appendValueInput("SPEEDB")
-        .setCheck('Number')
-        .setAlign(Blockly.ALIGN_RIGHT)
-        .appendField(Blockly.Msg.ROBOTS_MOTORS_SPEEDR);
-    this.setPreviousStatement(true, null);
-    this.setNextStatement(true, null);
-    this.setTooltip(Blockly.Msg.ROBOTS_MOTORS_ZUMO_FBS_TOOLTIP);
+    this.setColour(Blockly.Blocks.APDS9960.HUE);
+    this.appendDummyInput("")
+        .appendField(Blockly.Msg.ROBOTS_MOTORS_ZUMO_FN_TITLE);
+    this.setOutput(true, 'Number');
+    this.setTooltip(Blockly.Msg.ROBOTS_MOTORS_ZUMO_FN_TOOLTIP);
   }
 };
 
-Blockly.Blocks['zumo_motors_FB'] = {
+Blockly.Blocks['APDS9960_ColorSensor_red'] = {
   init: function() {
 	this.setHelpUrl(Blockly.Msg.ROBOTS_MISC_ZUMO_HELPURL);
-    this.setColour("#00138b");
-    this.appendDummyInput()
-        .appendField(Blockly.Msg.ROBOTS_MOTORS_ZUMO_FB_TITLE)
-        .appendField(new Blockly.FieldImage(Blockly.pathToBlockly + 'blocks/robots/0J4110.250.jpg', Blockly.Arduino.imageSize, Blockly.Arduino.imageSize))
-        .appendField(
-				new Blockly.FieldDropdown([
-						[ Blockly.Msg.ROBOTS_MOTORS_STOP, "stop" ],
-						[ Blockly.Msg.ROBOTS_MOTORS_FORWARD, "forward" ],
-						[ Blockly.Msg.ROBOTS_MOTORS_RIGHT, "right" ],
-						[ Blockly.Msg.ROBOTS_MOTORS_LEFT, "left" ],
-						[ Blockly.Msg.ROBOTS_MOTORS_BACKWARD, "backward" ] ]),
-				"DIRECTION");
-    this.setPreviousStatement(true, null);
-    this.setNextStatement(true, null);
-    this.setTooltip(Blockly.Msg.ROBOTS_MOTORS_ZUMO_FB_TOOLTIP);
+    this.setColour(Blockly.Blocks.APDS9960.HUE);
+    this.appendDummyInput("")
+        .appendField(Blockly.Msg.ROBOTS_MOTORS_ZUMO_FN_TITLE);
+    this.setOutput(true, 'Number');
+    this.setTooltip(Blockly.Msg.ROBOTS_MOTORS_ZUMO_FN_TOOLTIP);
   }
 };
 
-Blockly.Blocks['zumo_motors_FUs'] = {
+Blockly.Blocks['APDS9960_ColorSensor_green'] = {
   init: function() {
 	this.setHelpUrl(Blockly.Msg.ROBOTS_MISC_ZUMO_HELPURL);
-    this.setColour("#00138b");
-    this.appendDummyInput()
-        .appendField(Blockly.Msg.ROBOTS_MOTORS_ZUMO_FUS_TITLE)
-        .appendField(new Blockly.FieldImage(Blockly.pathToBlockly + 'blocks/robots/0J4110.250.jpg', Blockly.Arduino.imageSize, Blockly.Arduino.imageSize))
-        .appendField(
-				new Blockly.FieldDropdown([
-						[ Blockly.Msg.ROBOTS_MOTORS_STOP, "stop" ],
-						[ Blockly.Msg.ROBOTS_MOTORS_FORWARD, "forward" ],
-						[ Blockly.Msg.ROBOTS_MOTORS_RIGHT, "right" ],
-						[ Blockly.Msg.ROBOTS_MOTORS_LEFT, "left" ],
-						[ Blockly.Msg.ROBOTS_MOTORS_BACKWARD, "backward" ] ]),
-				"DIRECTION");
-    this.appendValueInput("SPEEDA")
-        .setCheck('Number')
-        .setAlign(Blockly.ALIGN_RIGHT)
-        .appendField(Blockly.Msg.ROBOTS_MOTORS_SPEEDL);
-	this.appendValueInput("SPEEDB")
-        .setCheck('Number')
-        .setAlign(Blockly.ALIGN_RIGHT)
-        .appendField(Blockly.Msg.ROBOTS_MOTORS_SPEEDR);
-	this.appendValueInput('FLIPL')
-		.appendField('Flip left motor')
-		.setAlign(Blockly.ALIGN_RIGHT)
-        .setCheck('Boolean');
-    this.appendValueInput('FLIPR')
-		.appendField('Flip right motor')
-		.setAlign(Blockly.ALIGN_RIGHT)
-        .setCheck('Boolean');
-	this.setPreviousStatement(true, null);
-    this.setNextStatement(true, null);
-    this.setTooltip(Blockly.Msg.ROBOTS_MOTORS_ZUMO_FUS_TOOLTIP);
+    this.setColour(Blockly.Blocks.APDS9960.HUE);
+    this.appendDummyInput("")
+        .appendField(Blockly.Msg.ROBOTS_MOTORS_ZUMO_FN_TITLE);
+    this.setOutput(true, 'Number');
+    this.setTooltip(Blockly.Msg.ROBOTS_MOTORS_ZUMO_FN_TOOLTIP);
+  }
+};
+
+Blockly.Blocks['APDS9960_ColorSensor_blue'] = {
+  init: function() {
+	this.setHelpUrl(Blockly.Msg.ROBOTS_MISC_ZUMO_HELPURL);
+    this.setColour(Blockly.Blocks.APDS9960.HUE);
+    this.appendDummyInput("")
+        .appendField(Blockly.Msg.ROBOTS_MOTORS_ZUMO_FN_TITLE);
+    this.setOutput(true, 'Number');
+    this.setTooltip(Blockly.Msg.ROBOTS_MOTORS_ZUMO_FN_TOOLTIP);
   }
 };
