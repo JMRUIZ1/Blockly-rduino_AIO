@@ -5,10 +5,6 @@ Version|0.17|$
 Arch|x86-msvc|$
 
 [PLUGINS]
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 6170fb18db05e834bad0d42862b068534c5f4648
 npCodebendercc.dll|$
 F:\Logiciels\Arduino_graphique\Blockly-at-rduino_AIO\K-Meleon\Profiles\3w6jnn5k.default\extensions\codebender@codebender.cc\plugins\npCodebendercc.dll|$
 1.7.0.0|$
@@ -17,15 +13,10 @@ Plugin for the Codebender.cc Arduino - Browser Communication|$
 Codebender.cc|$
 1
 0|application/x-codebendercc|Codebendercc||$
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 0ceb5c33fa68b7a1f1fd4cde81635f711e3e55c6
->>>>>>> 6170fb18db05e834bad0d42862b068534c5f4648
 NPSPWRAP.DLL|$
 C:\Program Files\Microsoft Office\root\VFS\ProgramFilesX86\Microsoft Office\Office16\NPSPWRAP.DLL|$
-16.0.7329.1015|$
-1475101643899|0|0|0|$
+16.0.7329.1017|$
+1475905962259|0|0|0|$
 The plugin allows you to have a better experience with Microsoft SharePoint|$
 Microsoft Office 2016|$
 2
@@ -33,26 +24,12 @@ Microsoft Office 2016|$
 1|application/x-sharepoint-uc|||$
 npMeetingJoinPluginOC.dll|$
 C:\Program Files\Microsoft Office\root\VFS\ProgramFilesX86\Mozilla Firefox\plugins\npMeetingJoinPluginOC.dll|$
-16.0.7329.1015|$
-1475101439662|0|0|0|$
+16.0.7329.1017|$
+1475905499035|0|0|0|$
 The plugin allows you to have a better experience with Microsoft Lync|$
 Microsoft Office 2016|$
 1
 0|application/vnd.microsoft.communicator.ocsmeeting|Lync Plug-in for Firefox||$
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-npCodebendercc.dll|$
-F:\Logiciels\Arduino_graphique\Blockly-at-rduino_AIO\K-Meleon\Profiles\3w6jnn5k.default\extensions\codebender@codebender.cc\plugins\npCodebendercc.dll|$
-1.7.0.0|$
-1474499916594|0|0|1|$
-Plugin for the Codebender.cc Arduino - Browser Communication|$
-Codebender.cc|$
-1
-0|application/x-codebendercc|Codebendercc||$
->>>>>>> 0ceb5c33fa68b7a1f1fd4cde81635f711e3e55c6
->>>>>>> 6170fb18db05e834bad0d42862b068534c5f4648
 NPSWF32_23_0_0_162.dll|$
 C:\Windows\SysWOW64\Macromed\Flash\NPSWF32_23_0_0_162.dll|$
 23.0.0.162|$

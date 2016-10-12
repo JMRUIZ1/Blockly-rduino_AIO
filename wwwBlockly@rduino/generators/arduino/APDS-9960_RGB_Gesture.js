@@ -21,7 +21,6 @@ goog.provide('Blockly.Arduino.APDS9960');
 
 goog.require('Blockly.Arduino');
 
-
 Blockly.Arduino.APDS9960_ColorSensor_init = function() {
   Blockly.Arduino.includes_["includes_APDS9960"] = 
   "#include <Wire.h>\n" +
@@ -37,7 +36,14 @@ Blockly.Arduino.APDS9960_ColorSensor_init = function() {
   Blockly.Arduino.setups_['setup_APDS9960'] = 
   "apds.init();\n" +
   "  apds.enableLightSensor(false);\n" +
-  "  delay(500);\n"; 
+  "  delay(500);\n";
+  
+  var code = 
+  "apds.readAmbientLight(ambient_light);\n" +
+  "apds.readRedLight(red_light);\n" +
+  "apds.readGreenLight(green_light);\n" +
+  "apds.readBlueLight(blue_light);";
+  return code;
 };
 
 Blockly.Arduino.APDS9960_ColorSensor_test = function() {
@@ -58,16 +64,14 @@ Blockly.Arduino.APDS9960_ColorSensor_test = function() {
   "  delay(500);\n"; 
   
   var code = 
-  "(if (  !apds.readAmbientLight(ambient_light) ||\n" +
+  "(!apds.readAmbientLight(ambient_light) ||\n" +
   "      !apds.readRedLight(red_light) ||\n" +
   "      !apds.readGreenLight(green_light) ||\n" +
-  "      !apds.readBlueLight(blue_light) )\n" +
-  "  return false;\n" +
-  " else return true;)\n";
-  return code;
+  "      !apds.readBlueLight(blue_light))";
+  return [code, Blockly.Arduino.ORDER_ATOMIC];
 };
 
- Blockly.Arduino.APDS9960_ColorSensor_ambient = function() {
+Blockly.Arduino.APDS9960_ColorSensor_ambient = function() {
   Blockly.Arduino.includes_["includes_APDS9960"] = 
   "#include <Wire.h>\n" +
   "#include <SparkFun_APDS9960.h>";
@@ -84,11 +88,11 @@ Blockly.Arduino.APDS9960_ColorSensor_test = function() {
   "  apds.enableLightSensor(false);\n" +
   "  delay(500);\n"; 
   
-  var code = "ambient_light;\n";
-  return code;
+  var code = "ambient_light";
+  return [code, Blockly.Arduino.ORDER_ATOMIC];
 };
 
- Blockly.Arduino.APDS9960_ColorSensor_red = function() {
+Blockly.Arduino.APDS9960_ColorSensor_red = function() {
   Blockly.Arduino.includes_["includes_APDS9960"] = 
   "#include <Wire.h>\n" +
   "#include <SparkFun_APDS9960.h>";
@@ -105,11 +109,11 @@ Blockly.Arduino.APDS9960_ColorSensor_test = function() {
   "  apds.enableLightSensor(false);\n" +
   "  delay(500);\n"; 
   
-  var code = "red_light;\n";
-  return code;
+  var code = "red_light";
+  return [code, Blockly.Arduino.ORDER_ATOMIC];
 };
 
- Blockly.Arduino.APDS9960_ColorSensor_green = function() {
+Blockly.Arduino.APDS9960_ColorSensor_green = function() {
   Blockly.Arduino.includes_["includes_APDS9960"] = 
   "#include <Wire.h>\n" +
   "#include <SparkFun_APDS9960.h>";
@@ -126,11 +130,11 @@ Blockly.Arduino.APDS9960_ColorSensor_test = function() {
   "  apds.enableLightSensor(false);\n" +
   "  delay(500);\n"; 
   
-  var code = "green_light;\n";
-  return code;
+  var code = "green_light";
+  return [code, Blockly.Arduino.ORDER_ATOMIC];
 };
 
- Blockly.Arduino.APDS9960_ColorSensor_blue = function() {
+Blockly.Arduino.APDS9960_ColorSensor_blue = function() {
   Blockly.Arduino.includes_["includes_APDS9960"] = 
   "#include <Wire.h>\n" +
   "#include <SparkFun_APDS9960.h>";
@@ -147,6 +151,6 @@ Blockly.Arduino.APDS9960_ColorSensor_test = function() {
   "  apds.enableLightSensor(false);\n" +
   "  delay(500);\n"; 
   
-  var code = "blue_light;\n";
-  return code;
+  var code = "blue_light";
+  return [code, Blockly.Arduino.ORDER_ATOMIC];
 };

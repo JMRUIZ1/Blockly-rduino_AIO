@@ -353,7 +353,7 @@
 		<block type="IR_get_blink"></block>
 		<block type="IR_get"></block>
 	</category>
-	<category name="APDS-9960_RGB_Gesture" colour="#D9242D">
+	<category name="CAT_APDS_9960_RGB_Gesture" colour="#D9242D">
 		<block type="APDS9960_ColorSensor_init"></block>
 		<block type="APDS9960_ColorSensor_test"></block>
 		<block type="APDS9960_ColorSensor_ambient"></block>
@@ -1454,8 +1454,14 @@
 			</block>
 		</category>
 		<category name="CAT_ZUMO_FUNCTION" colour="#00138b">
-			<block type="Zumo_line_follower"></block>
 			<block type="Zumo_SensorCalibration"></block>
+			<block type="Zumo_line_follower">
+				<value name="ERROR">
+					<shadow type="math_number">
+						<field name="NUM">2000</field>
+					</shadow>
+				</value>
+			</block>
 		</category>
 		<sep></sep>
 	</category>
@@ -1669,6 +1675,20 @@
 			<block type="EsusBoard_ReadStream"></block>
 			<block type="EsusBoard_WifiContain"></block>
 			<block type="EsusBoard_dataWifiAvailable"></block>
+			<block type="EsusBoard_SendStream">
+				<value name="Text_send">
+					<shadow type="text">
+						<field name="TEXT"></field>
+					</shadow>
+				</value>
+			</block>
+			<block type="EsusBoard_SendFloatStream">
+				<value name="sendFloat">
+					<shadow type="math_number">
+						<field name="NUM"></field>
+					</shadow>
+				</value>
+			</block>
 		</category>
 		<block type="EsusBoard_init"></block>
 		<block type="EsusBoard_analog"></block>

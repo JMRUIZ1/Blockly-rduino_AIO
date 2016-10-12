@@ -8,39 +8,24 @@
  * To make a manual change to preferences, you can visit the URL about:config
  */
 
-<<<<<<< HEAD
-user_pref("app.update.lastUpdateTime.addon-background-update-timer", 1476031178);
-user_pref("app.update.lastUpdateTime.blocklist-background-update-timer", 1476031298);
-user_pref("app.update.lastUpdateTime.search-engine-update-timer", 1476031058);
-=======
-user_pref("app.update.lastUpdateTime.addon-background-update-timer", 1475844094);
-user_pref("app.update.lastUpdateTime.blocklist-background-update-timer", 1475844214);
-<<<<<<< HEAD
-user_pref("app.update.lastUpdateTime.search-engine-update-timer", 1476022334);
-=======
-user_pref("app.update.lastUpdateTime.search-engine-update-timer", 1475843974);
->>>>>>> 0ceb5c33fa68b7a1f1fd4cde81635f711e3e55c6
->>>>>>> 6170fb18db05e834bad0d42862b068534c5f4648
+user_pref("app.update.lastUpdateTime.addon-background-update-timer", 1476732098);
+user_pref("app.update.lastUpdateTime.blocklist-background-update-timer", 1476732218);
+user_pref("app.update.lastUpdateTime.search-engine-update-timer", 1476731978);
 user_pref("browser.cache.disk.smart_size.use_old_max", false);
+user_pref("browser.download.lastDir", "C:\\Users\\babas\\Desktop\\FDS");
 user_pref("browser.formfill.enable", false);
 user_pref("browser.formfill.saveHttpsForms", false);
 user_pref("browser.tabs.autoHide", true);
+user_pref("consoleservice.enabled", true);
 user_pref("dom.disable_window_flip", false);
 user_pref("dom.disable_window_open_feature.status", false);
+user_pref("dom.report_all_js_exceptions", true);
 user_pref("extensions.blocklist.pingCountVersion", -1);
 user_pref("extensions.bootstrappedAddons", "{}");
 user_pref("extensions.databaseSchema", 16);
 user_pref("extensions.enabledAddons", "codebender%40codebender.cc:1.7.0.0,%7B899DF1F8-2F43-4394-8315-37F6744E6319%7D:1.0.9.1");
 user_pref("extensions.getAddons.databaseSchema", 5);
-<<<<<<< HEAD
 user_pref("extensions.installCache", "[{\"name\":\"app-global\",\"addons\":{\"{899DF1F8-2F43-4394-8315-37F6744E6319}\":{\"descriptor\":\"F:\\\\Logiciels\\\\Arduino_graphique\\\\Blockly-at-rduino_AIO\\\\K-Meleon\\\\browser\\\\extensions\\\\{899DF1F8-2F43-4394-8315-37F6744E6319}.xpi\",\"mtime\":1426181465185}}},{\"name\":\"app-profile\",\"addons\":{\"codebender@codebender.cc\":{\"descriptor\":\"F:\\\\Logiciels\\\\Arduino_graphique\\\\Blockly-at-rduino_AIO\\\\K-Meleon\\\\Profiles\\\\3w6jnn5k.default\\\\extensions\\\\codebender@codebender.cc\",\"mtime\":1476004924418,\"rdfTime\":1474499916357}}}]");
-=======
-<<<<<<< HEAD
-user_pref("extensions.installCache", "[{\"name\":\"app-global\",\"addons\":{\"{899DF1F8-2F43-4394-8315-37F6744E6319}\":{\"descriptor\":\"F:\\\\Logiciels\\\\Arduino_graphique\\\\Blockly-at-rduino_AIO\\\\K-Meleon\\\\browser\\\\extensions\\\\{899DF1F8-2F43-4394-8315-37F6744E6319}.xpi\",\"mtime\":1426181465185}}},{\"name\":\"app-profile\",\"addons\":{\"codebender@codebender.cc\":{\"descriptor\":\"F:\\\\Logiciels\\\\Arduino_graphique\\\\Blockly-at-rduino_AIO\\\\K-Meleon\\\\Profiles\\\\3w6jnn5k.default\\\\extensions\\\\codebender@codebender.cc\",\"mtime\":1476004924418,\"rdfTime\":1474499916357}}}]");
-=======
-user_pref("extensions.installCache", "[{\"name\":\"app-global\",\"addons\":{\"{899DF1F8-2F43-4394-8315-37F6744E6319}\":{\"descriptor\":\"F:\\\\Logiciels\\\\Arduino_graphique\\\\Blockly-at-rduino_AIO\\\\K-Meleon\\\\browser\\\\extensions\\\\{899DF1F8-2F43-4394-8315-37F6744E6319}.xpi\",\"mtime\":1426181465185}}},{\"name\":\"app-profile\",\"addons\":{\"codebender@codebender.cc\":{\"descriptor\":\"F:\\\\Logiciels\\\\Arduino_graphique\\\\Blockly-at-rduino_AIO\\\\K-Meleon\\\\Profiles\\\\3w6jnn5k.default\\\\extensions\\\\codebender@codebender.cc\",\"mtime\":1475933067347,\"rdfTime\":1474499916357}}}]");
->>>>>>> 0ceb5c33fa68b7a1f1fd4cde81635f711e3e55c6
->>>>>>> 6170fb18db05e834bad0d42862b068534c5f4648
 user_pref("extensions.lastAppVersion", "31.8.0esr");
 user_pref("extensions.lastPlatformVersion", "31.8.0esr");
 user_pref("extensions.pendingOperations", false);
@@ -52,27 +37,14 @@ user_pref("font.name.fantasy.x-western", "3ds");
 user_pref("general.useragent.contentlocale", "");
 user_pref("general.useragent.locale", "fr");
 user_pref("gfx.direct3d.last_used_feature_level_idx", 0);
-user_pref("idle.lastDailyNotification", 1475844184);
+user_pref("idle.lastDailyNotification", 1476732459);
 user_pref("kmeleon.MRU.URL0", "http://technologiescollege.github.io/Blockly-at-rduino/");
 user_pref("kmeleon.MRU.maxURLs", 0);
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 6170fb18db05e834bad0d42862b068534c5f4648
-user_pref("kmeleon.display.XPos", 131);
-user_pref("kmeleon.display.YPos", 174);
+user_pref("kmeleon.display.XPos", 134);
+user_pref("kmeleon.display.YPos", 177);
 user_pref("kmeleon.display.accelInMenus", false);
 user_pref("kmeleon.display.height", 31);
 user_pref("kmeleon.display.maximized", true);
-<<<<<<< HEAD
-=======
-=======
-user_pref("kmeleon.display.XPos", 108);
-user_pref("kmeleon.display.YPos", 151);
-user_pref("kmeleon.display.accelInMenus", false);
-user_pref("kmeleon.display.height", 31);
->>>>>>> 0ceb5c33fa68b7a1f1fd4cde81635f711e3e55c6
->>>>>>> 6170fb18db05e834bad0d42862b068534c5f4648
 user_pref("kmeleon.display.statusbar", true);
 user_pref("kmeleon.display.title", "Blockly@rduino");
 user_pref("kmeleon.display.width", 132);
@@ -127,9 +99,10 @@ user_pref("kmeleon.toolband.Tab/&Window Buttons.visibility", false);
 user_pref("kmeleon.toolband.Tabs.index", 11);
 user_pref("kmeleon.toolband.URL Bar.visibility", false);
 user_pref("network.cookie.prefsMigrated", true);
+user_pref("network.http.pipelining", true);
 user_pref("network.http.proxy.pipelining", true);
 user_pref("network.proxy.type", 4);
-user_pref("places.database.lastMaintenance", 1475361400);
+user_pref("places.database.lastMaintenance", 1476170917);
 user_pref("places.history.expiration.transient_current_max_pages", 92576);
 user_pref("plugin.importedState", true);
 user_pref("signon.expireMasterPassword", false);
