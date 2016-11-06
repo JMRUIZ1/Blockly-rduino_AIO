@@ -202,6 +202,17 @@ html[dir="RTL"] .divSwitch-hor {
     padding-left: 10px;
 }
 
+.modal-body-config-global_left {
+    position: relative;
+}
+
+.arduino_card_mini_picture_div {
+	position:absolute;
+	top:0;
+	right:5px;
+	width:150px;
+}
+
 html[dir="RTL"] .divCard-hor {
     float: right;
     padding-right: 10px;
@@ -265,6 +276,18 @@ html[dir="RTL"] #btn_size {
 #btn_blocs_picture {
 	position: absolute;
 	right: 150px;
+	top: 0px;
+}
+
+#btn_undo {
+	position: absolute;
+	right: 330px;
+	top: 0px;
+}
+
+#btn_redo {
+	position: absolute;
+	right: 285px;
 	top: 0px;
 }
 

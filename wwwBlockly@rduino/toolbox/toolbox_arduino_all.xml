@@ -153,7 +153,7 @@
 		</value> <value name="COLOUR2"> <block type="colour_picker"> <field name="COLOUR">#3333ff</field>
 		</block> </value> <value name="RATIO"> <block type="math_number"> <field
 		name="NUM">0.5</field> </block> </value> </block> </category> -->
-	<category name="CAT_VARIABLES" custom="VARIABLE" colour="#EE7D16">
+	<category name="CAT_VARIABLES" colour="#EE7D16">
 		<block type="variables_set"></block>
 		<block type="variables_set_type"></block>
 		<block type="variables_get"></block>
@@ -168,6 +168,18 @@
 		<block type="biblio_include"></block>
 		<block type="base_code"></block>
 		<block type="base_end"></block>
+		<!-- @pbra 20160607 -->
+		<block type="inout_digital_mode">
+			<value name="PIN">
+				<shadow type="math_number">
+					<field name="NUM">0</field>
+				</shadow>
+			</value>
+			<value name="PINMODE">
+				<shadow type="pinmode"></shadow>
+			</value>
+		</block>
+		<!-- @pbra 20160607 END-->
 		<category name="CAT_ARDUINO_IN" colour="#00979D">
 			<block type="inout_analog_read_validator"></block>
 			<block type="inout_digital_read_validator"></block>
@@ -1528,6 +1540,21 @@
 				</shadow>
 			</value>
 		</block>
+		<!-- @pbra 20160613 -->
+		<block type="l298n_motor_init"></block>
+		<block type="l298n_motor">
+			<value name="SPEED">
+				<shadow type="math_number">
+					<field name="NUM">175</field>
+				</shadow>
+			</value>
+			<value name="ID">
+				<shadow type="text_char">
+					<field name="TEXT">ID1</field>
+				</shadow>
+			</value>
+		</block>
+		<!-- @pbra 20160613 END-->
 		<block type="pololu_drv8835_s">
 			<value name="SPEEDA">
 				<shadow type="math_number">
@@ -1586,7 +1613,7 @@
 		<block type="servo_rot_continue"></block>
 		<block type="servo_rot_continue_param"></block>
 	</category>
-	<category name="CAT_STEPPER" colour="80">
+	<category name="CAT_STEPPER" colour="#8CA55B">
 		<block type="stepper_config"></block>
 		<block type="stepper_step"></block>
 	</category>

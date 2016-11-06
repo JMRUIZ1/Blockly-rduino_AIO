@@ -13,12 +13,13 @@
 
 #include "AdafruitIO_WINC1500.h"
 
+Adafruit_WINC1500 WiFi(WINC_CS, WINC_IRQ, WINC_RST);
 
 AdafruitIO_WINC1500::AdafruitIO_WINC1500(const char *user, const char *key, const char *ssid, const char *pass):AdafruitIO(user, key)
 {
   _ssid = ssid;
   _pass = pass;
-  _client = new WiFiSSLClient;
+  _client = new Adafruit_WINC1500SSLClient;
   _mqtt = new Adafruit_MQTT_Client(_client, _host, _port);
 }
 
@@ -26,7 +27,7 @@ AdafruitIO_WINC1500::AdafruitIO_WINC1500(const __FlashStringHelper *user, const 
 {
   _ssid = (const char*)ssid;
   _pass = (const char*)pass;
-  _client = new WiFiSSLClient;
+  _client = new Adafruit_WINC1500SSLClient;
   _mqtt = new Adafruit_MQTT_Client(_client, _host, _port);
 }
 
@@ -41,7 +42,9 @@ AdafruitIO_WINC1500::~AdafruitIO_WINC1500()
 void AdafruitIO_WINC1500::_connect()
 {
 
-  WiFi.setPins(WINC_CS, WINC_IRQ, WINC_RST, WINC_EN);
+  pinMode(WINC_EN, OUTPUT);
+  digitalWrite(WINC_EN, HIGH);
+  delay(100);
 
   // no shield? bail
   if(WiFi.status() == WL_NO_SHIELD)
