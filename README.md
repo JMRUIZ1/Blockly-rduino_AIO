@@ -12,8 +12,12 @@ All-In-One multilingual Windows offline software version of Blockly@rduino webwa
 ----------------------------------
 *vous pouvez aussi me demander une facture pour que votre établissement me fasse un 'don' officiel par virement bancaire. Je ne fais pas payer de licence mais je compte sur vous pour aider du montant auquel vous estimez ce travail.*
 
+*Lien alternatif de téléchargement/download alternative*
+------------------------------------------------------
+**[https://drive.google.com/open?id=0B1G-fVQW_qkiSENwakxMc3Y4SVE](https://drive.google.com/open?id=0B1G-fVQW_qkiSENwakxMc3Y4SVE)**
 
-It contains
+
+**It contains**
 -------------
  - Arduino TechnoEduc 1.6.12 : https://github.com/technologiescollege/arduino 
  - Blockly@rduino : https://github.com/technologiescollege/Blockly-at-rduino
@@ -53,3 +57,4 @@ DjmSoftware from developpez.net http://www.developpez.com/user/profil/285/DjmSof
 ***[You for your future donation with Paypal:](https://www.paypal.com/fr/cgi-bin/webscr?cmd=_flow&SESSION=o8z3KNFl16Tjlxhk1mBekCcRsG_3_NDe0CfWh8b1vfSYIbMxJnwa92YwM3y&dispatch=5885d80a13c0db1f8e263663d3faee8d4fe1dd75ca3bd4f11d72275b28239088)***
 
 ![enter image description here](https://www.paypalobjects.com/fr_FR/FR/i/btn/btn_donateCC_LG.gif)
+
