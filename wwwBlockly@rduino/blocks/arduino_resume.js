@@ -47,3 +47,4 @@ $('head').append($('<script>').attr('type', 'text/javascript').attr('src', "bloc
 $('head').append($('<script>').attr('type', 'text/javascript').attr('src', "blocks/robots/robot_misc.js"));
 $('head').append($('<script>').attr('type', 'text/javascript').attr('src', "blocks/arduino_shield/arduino_shield.js"));
 $('head').append($('<script>').attr('type', 'text/javascript').attr('src', "blocks/EsusBoard/EsusBoard.js"));
+$('head').append($('<script>').attr('type', 'text/javascript').attr('src', "blocks/Bluetooth_Electronics/Bluetooth_Electronics.js"));

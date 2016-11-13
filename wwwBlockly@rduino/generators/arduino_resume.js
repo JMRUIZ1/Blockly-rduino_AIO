@@ -38,3 +38,4 @@ $('head').append($('<script>').attr('type', 'text/javascript').attr('src', "gene
 $('head').append($('<script>').attr('type', 'text/javascript').attr('src', "generators/arduino/robot_misc.js"));
 $('head').append($('<script>').attr('type', 'text/javascript').attr('src', "generators/arduino/arduino_shield.js"));
 $('head').append($('<script>').attr('type', 'text/javascript').attr('src', "generators/arduino/EsusBoard.js"));
+$('head').append($('<script>').attr('type', 'text/javascript').attr('src', "generators/arduino/Bluetooth_Electronics.js"));

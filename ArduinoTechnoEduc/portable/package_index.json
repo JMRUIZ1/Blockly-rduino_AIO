@@ -1101,6 +1101,42 @@
               "version": "4.0.0-atmel"
             }
           ]
+        },
+        {
+          "name": "Arduino SAMD Boards (32-bits ARM Cortex-M0+)",
+          "architecture": "samd",
+          "version": "1.6.8",
+          "category": "Arduino",
+          "url": "http://downloads.arduino.cc/cores/samd-1.6.8.tar.bz2",
+          "archiveFileName": "samd-1.6.8.tar.bz2",
+          "checksum": "SHA-256:05bff70561e5f10e86d1d890f647614aac989c4b2c384fc1b568e7d8c96b8267",
+          "size": "841801",
+          "boards": [
+            { "name": "Arduino/Genuino Zero" },
+            { "name": "Arduino/Genuino MKR1000" }
+          ],
+          "toolsDependencies": [
+            {
+              "packager": "arduino",
+              "name": "arm-none-eabi-gcc",
+              "version": "4.8.3-2014q1"
+            },
+            {
+              "packager": "arduino",
+              "name": "bossac",
+              "version": "1.7.0"
+            },
+            {
+              "packager": "arduino",
+              "name": "openocd",
+              "version": "0.9.0-arduino"
+            },
+            {
+              "packager": "arduino",
+              "name": "CMSIS",
+              "version": "4.0.0-atmel"
+            }
+          ]
         }
       ],
       "tools": [
@@ -2626,6 +2662,46 @@
             {"name": "Windows 10 IoT Core"}
           ],
           "toolsDependencies":[]
+        },
+        {
+          "name": "Windows 10 Iot Core",
+          "architecture": "win10",
+          "version": "1.1.1",
+          "category": "Contributed",
+          "help": {
+            "online": "http://ms-iot.github.io/content/en-US/win10/IotCoreAppDeployment_ArduinoIde.htm"
+          },
+          "url": "https://github.com/ms-iot/iot-utilities/raw/master/IotCoreAppDeployment/ArduinoIde/release/win10_iotcore-1.1.1_ide-1.6.11.zip",
+          "archiveFileName": "win10_iotcore-1.1.1_ide-1.6.11.zip",
+          "checksum": "SHA-256:f455f2829164065faacde141b3c15604c51bb79b6874d55d1124c66aae372693",
+          "size": "48317624",
+          "help": {
+                    "online": "http://ms-iot.github.io/content/en-US/win10/IotCoreAppDeployment_ArduinoIde.htm"
+          },
+          "boards": [
+            {"name": "Windows 10 IoT Core"}
+          ],
+          "toolsDependencies":[]
+        },
+        {
+          "name": "Windows 10 Iot Core",
+          "architecture": "win10",
+          "version": "1.1.2",
+          "category": "Contributed",
+          "help": {
+            "online": "http://ms-iot.github.io/content/en-US/win10/IotCoreAppDeployment_ArduinoIde.htm"
+          },
+          "url": "https://github.com/ms-iot/iot-utilities/raw/master/IotCoreAppDeployment/ArduinoIde/release/win10_iotcore-1.1.2_ide-1.6.11.zip",
+          "archiveFileName": "win10_iotcore-1.1.2_ide-1.6.11.zip",
+          "checksum": "SHA-256:b1c9956b46f33bcebb7f500d29931b19ed4723c713ac0439681ea1fb172722d1",
+          "size": "48317648",
+          "help": {
+                    "online": "http://ms-iot.github.io/content/en-US/win10/IotCoreAppDeployment_ArduinoIde.htm"
+          },
+          "boards": [
+            {"name": "Windows 10 IoT Core"}
+          ],
+          "toolsDependencies":[]
         }
       ],
       "tools":[]
@@ -2674,6 +2750,26 @@
               "version": "4.0.0-atmel"
             }
           ]
+        },
+        {
+          "name": "Arrow Boards",
+          "architecture": "samd",
+          "version": "2.0.0",
+          "category": "Partner",
+          "url": "http://downloads.arduino.cc/cores/Arrow-samd-2.0.0.tar.gz",
+          "archiveFileName": "Arrow-samd-2.0.0.tar.gz",
+          "checksum": "SHA-256:e0bbf85d28af03a196a625462598294f9dd30ffbc9d686cbf2cc09bc5a76421a",
+          "size": "772778",
+          "boards": [
+            {"name": "SmartEverything Fox"},
+            {"name": "SmartEverything Fox3"},
+            {"name": "SmartEverything Lion"},
+            {"name": "SmartEverything Dragonfly"},
+            {"name": "Analog ADI"},
+            {"name": "SmartTutto"}
+          ],
+          "toolsDependencies": [
+          ]
         }
       ],
       "tools": [
@@ -2697,6 +2793,21 @@
           "archiveFileName": "EMoRo_2560-3.2.1.zip",
           "checksum": "SHA-256:56dd308fc2f84229688f6219a4c31629ec9b38bdadcd382c45fae9247b94f051",
           "size": "846444",
+          "boards": [
+            {"name": "EMoRo 2560. Board based on ATmega 2560 MCU"}
+          ],
+          "toolsDependencies": [
+          ]
+        },
+        {
+          "name": "EMORO 2560",
+          "architecture": "avr",
+          "version": "3.2.2",
+          "category": "Arduino@Heart",
+          "url": "http://downloads.arduino.cc/cores/EMoRo_2560-3.2.2.zip",
+          "archiveFileName": "EMoRo_2560-3.2.2.zip",
+          "checksum": "SHA-256:c67e6660af44c923c10deede252f9c46dabaf5b61d6e44f3785be688f1c9b46f",
+          "size": "565744",
           "boards": [
             {"name": "EMoRo 2560. Board based on ATmega 2560 MCU"}
           ],

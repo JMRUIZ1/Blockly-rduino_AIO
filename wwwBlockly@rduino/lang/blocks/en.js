@@ -553,6 +553,8 @@ Blockly.Msg.CAT_ESUS_MOTORS = "Motors control";
 
 Blockly.Msg.CAT_APDS_9960_RGB_Gesture = "color + movement"; //added 9 october 2016
 
+Blockly.Msg.CAT_BT_ELECTRONICS = "Bluetooth Electronics"; //added 13 november 2016
+
 
 //**********************************blocks***********************************************
 //**********************************blocks***********************************************
@@ -1412,3 +1414,12 @@ Blockly.Msg.ARDUINO_INOUT_DIGITAL_MODE_INPUT2 = "to";
 Blockly.Msg.ARDUINO_INOUT_DIGITAL_MODE_DROPDOWN = [["INPUT", "INPUT"], ["OUTPUT", "OUTPUT"], ["INPUT_PULLUP", "INPUT_PULLUP"]];
 Blockly.Msg.ARDUINO_INOUT_DIGITAL_MODE_TOOLTIP = "Configures the specified pin to behave either as an input or an output";
 
+//******** Bluetotth Electronics example http://www.keuwl.com/electronics.html
+Blockly.Msg.BT_ELEC_Init_HELPURL = "https://play.google.com/store/apps/details?id=com.keuwl.arduinobluetooth&hl=fr";
+Blockly.Msg.BT_ELEC_TOOLTIP = "download Android application";
+Blockly.Msg.BT_ELEC_LED_brightness_HELPURL = "http://www.keuwl.com/electronics/rduino/bluet/02-pwm-leds/";
+Blockly.Msg.BT_ELEC_LED_brightness_text = "control the brightness of 3 LEDs";
+Blockly.Msg.BT_ELEC_LED_brightness_TOOLTIP = "see demo in Help";
+Blockly.Msg.BT_ELEC_RC_car_HELPURL = "http://www.keuwl.com/electronics/rduino/bluet/01-rc-car/";
+Blockly.Msg.BT_ELEC_RC_car_text = "4 buttons controlling a RC car";
+Blockly.Msg.BT_ELEC_RC_car_TOOLTIP = "see demo in Help";
