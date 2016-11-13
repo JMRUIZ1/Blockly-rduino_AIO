@@ -14,7 +14,7 @@ All-In-One multilingual Windows offline software version of Blockly@rduino webwa
 
 *Lien alternatif de téléchargement/download alternative*
 ------------------------------------------------------
-**[https://drive.google.com/open?id=0B1G-fVQW_qkiSENwakxMc3Y4SVE](https://drive.google.com/open?id=0B1G-fVQW_qkiSENwakxMc3Y4SVE)**
+**[https://mega.nz/#F!tQpjiYrZ!pUjhrYtpdbwXXK1Qdsi8UQ](https://mega.nz/#F!tQpjiYrZ!pUjhrYtpdbwXXK1Qdsi8UQ)**
 
 
 **It contains**
