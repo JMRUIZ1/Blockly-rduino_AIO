@@ -30,7 +30,7 @@ How it works and what you can do
 --------------
 
 ![https://raw.githubusercontent.com/technologiescollege/Blockly-at-rduino/gh-pages/media/Capture.jpg](https://vimeo.com/191727929)
-![enter image description here](https://raw.githubusercontent.com/technologiescollege/Blockly-at-rduino/gh-pages/media/Capture.jpg)
+![https://vimeo.com/191727929](https://raw.githubusercontent.com/technologiescollege/Blockly-at-rduino/gh-pages/media/Capture.jpg)
 
 What you can do
 --------------
