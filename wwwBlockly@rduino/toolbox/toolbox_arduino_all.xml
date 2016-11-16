@@ -1721,7 +1721,8 @@
 		<block type="EsusBoard_analog"></block>
 	</category>
 	<category name="CAT_BT_ELECTRONICS" colour="#142D5E">
-		<block type="BT_ELEC_Init"></block>
+		<block type="BT_ELEC_Init" disabled="true"></block>
+		<sep></sep>
 		<block type="BT_ELEC_LED_brightness"></block>
 		<block type="BT_ELEC_RC_car"></block>
 	</category>

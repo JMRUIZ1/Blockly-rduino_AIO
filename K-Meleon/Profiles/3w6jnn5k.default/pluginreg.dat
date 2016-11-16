@@ -7,8 +7,8 @@ Arch|x86-msvc|$
 [PLUGINS]
 NPSPWRAP.DLL|$
 C:\Program Files\Microsoft Office\root\VFS\ProgramFilesX86\Microsoft Office\Office16\NPSPWRAP.DLL|$
-16.0.7426.1009|$
-1477600438807|0|0|0|$
+16.0.7426.1015|$
+1477837694864|0|0|0|$
 The plugin allows you to have a better experience with Microsoft SharePoint|$
 Microsoft Office 2016|$
 2
@@ -16,8 +16,8 @@ Microsoft Office 2016|$
 1|application/x-sharepoint-uc|||$
 npMeetingJoinPluginOC.dll|$
 C:\Program Files\Microsoft Office\root\VFS\ProgramFilesX86\Mozilla Firefox\plugins\npMeetingJoinPluginOC.dll|$
-16.0.7426.1009|$
-1477600293465|0|0|0|$
+16.0.7426.1015|$
+1477837579468|0|0|0|$
 The plugin allows you to have a better experience with Microsoft Lync|$
 Microsoft Office 2016|$
 1

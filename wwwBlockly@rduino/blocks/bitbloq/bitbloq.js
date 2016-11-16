@@ -3,9 +3,9 @@
 
 'use strict';
 
-goog.provide('Blockly.Arduino.bq');
+goog.provide('Blockly.Blocks.bq');
 
-goog.require('Blockly.Arduino');
+goog.require('Blockly.Blocks');
 
 // define blocks
 

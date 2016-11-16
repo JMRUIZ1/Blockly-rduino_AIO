@@ -1410,6 +1410,7 @@ Blockly.Msg.ARDUINO_INOUT_DIGITAL_MODE_TOOLTIP = "Configurer la broche spécifé
 
 //******** Bluetotth Electronics example http://www.keuwl.com/electronics.html
 Blockly.Msg.BT_ELEC_Init_HELPURL = "https://play.google.com/store/apps/details?id=com.keuwl.arduinobluetooth&hl=fr";
+Blockly.Msg.BT_ELEC_init_text = "photographier le QR code pour télécharger l'app Android :";
 Blockly.Msg.BT_ELEC_TOOLTIP = "téléchargement de l'application pour Android";
 Blockly.Msg.BT_ELEC_LED_brightness_HELPURL = "http://www.keuwl.com/electronics/rduino/bluet/02-pwm-leds/";
 Blockly.Msg.BT_ELEC_LED_brightness_text = "contrôle de la luminosité de 3 DEL";

@@ -14,10 +14,14 @@ Blockly.Blocks['BT_ELEC_Init'] = {
   init: function() {
     this.setColour(Blockly.Blocks.BT_ELEC.HUE);	this.setHelpUrl(Blockly.Msg.BT_ELEC_Init_HELPURL);
 	this.setInputsInline(true);
+    /*this.appendDummyInput()
+        .appendField(new Blockly.FieldImage(Blockly.pathToBlockly + 'blocks/Bluetooth_Electronics/Bluetooth_Electronics_app.jpg', Blockly.Arduino.imageSize, Blockly.Arduino.imageSize));*/
     this.appendDummyInput()
-        .appendField(new Blockly.FieldImage(Blockly.pathToBlockly + 'blocks/Bluetooth_Electronics/Bluetooth_Electronics_app.jpg', Blockly.Arduino.imageSize, Blockly.Arduino.imageSize))
-        .appendField(new Blockly.FieldImage(Blockly.pathToBlockly + 'blocks/Bluetooth_Electronics/QRCode_1479053702055.png', 256, 256))
-	    .appendField(Blockly.Msg.BT_ELEC_init);
+		.setAlign(Blockly.ALIGN_LEFT)
+	    .appendField(new Blockly.FieldLabel(Blockly.Msg.BT_ELEC_init_text));
+    this.appendDummyInput()
+		.setAlign(Blockly.ALIGN_LEFT)
+        .appendField(new Blockly.FieldImage(Blockly.pathToBlockly + 'blocks/Bluetooth_Electronics/QRCode_1479053702055.png', 256, 256));
     this.setPreviousStatement(true, null);
     this.setNextStatement(true, null);
     this.setTooltip(Blockly.Msg.BT_ELEC_TOOLTIP);
