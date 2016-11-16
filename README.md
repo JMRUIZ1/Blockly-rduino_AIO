@@ -4,6 +4,7 @@ All-In-One multilingual Windows offline software version of Blockly@rduino webwa
 ----------
 
 ***[Thanks for donation with Paypal to help me improve this software.](https://www.paypal.com/fr/cgi-bin/webscr?cmd=_flow&SESSION=o8z3KNFl16Tjlxhk1mBekCcRsG_3_NDe0CfWh8b1vfSYIbMxJnwa92YwM3y&dispatch=5885d80a13c0db1f8e263663d3faee8d4fe1dd75ca3bd4f11d72275b28239088)***
+
 ![enter image description here](https://www.paypalobjects.com/fr_FR/FR/i/btn/btn_donateCC_LG.gif)
 
 ----------
@@ -29,7 +30,7 @@ How it works and what you can do
 --------------
 
 ![https://raw.githubusercontent.com/technologiescollege/Blockly-at-rduino/gh-pages/media/Capture.jpg](https://vimeo.com/191727929)
-![enter image description here](https://raw.githubusercontent.com/technologiescollege/Blockly-rduino_AIO/master/documentation/Capture.jpg)
+![enter image description here](https://raw.githubusercontent.com/technologiescollege/Blockly-at-rduino/gh-pages/media/Capture.jpg)
 
 What you can do
 --------------
