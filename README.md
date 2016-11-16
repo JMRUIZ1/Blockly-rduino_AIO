@@ -25,6 +25,12 @@ All-In-One multilingual Windows offline software version of Blockly@rduino webwa
  
 ![enter image description here](https://raw.githubusercontent.com/technologiescollege/Blockly-rduino_AIO/master/documentation/Capture.jpg)
 
+How it works and what you can do
+--------------
+
+[https://vimeo.com/191727929](https://github.com/technologiescollege/Blockly-at-rduino/blob/gh-pages/media/Capture.jpg)
+
+
 What you can do
 --------------
 
