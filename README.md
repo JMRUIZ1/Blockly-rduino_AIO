@@ -13,9 +13,14 @@ All-In-One multilingual Windows offline software version of Blockly@rduino webwa
 ----------------------------------
 *vous pouvez aussi me demander une facture pour que votre établissement me fasse un 'don' officiel par virement bancaire. Je ne fais pas payer de licence mais je compte sur vous pour aider du montant auquel vous estimez ce travail.*
 
-*Lien alternatif de téléchargement/download alternative*
+*Téléchargement & maintenir synchronisés/download & synchronize*
 ------------------------------------------------------
-**[https://mega.nz/#F!EhlSHBKD!q4z9ICYghAD69z0qBvYopQ](https://mega.nz/#F!EhlSHBKD!q4z9ICYghAD69z0qBvYopQ)**
+**[https://github.com/technologiescollege/Blockly-rduino_AIO_synchro](https://github.com/technologiescollege/Blockly-rduino_AIO_synchro)**
+Télécharger / download
+Décompresser / unzip
+Lire le PDF / read PDF file
+Lancer l'exécutable / aunch exe file
+Patience... / Be patient...
 
 
 **It contains**
